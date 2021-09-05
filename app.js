@@ -9,16 +9,21 @@ var notesList=[2000,500,100,20,10,5,1];
 
 button.addEventListener('click',function clickHandeler(){
     message.style.display="none";
-    if(billAmount.value>0){
-        if(cashGiven.value>=billAmount.value){
-            var returnAmount=cashGiven.value-billAmount.value;
-            remainingAmout(returnAmount);
+    if(billAmount.value&&cashGiven.value){
+        if(billAmount.value>0){
+            if(cashGiven.value>=billAmount.value){
+                var returnAmount=cashGiven.value-billAmount.value;
+                remainingAmout(returnAmount);
+            }else{
+                showMessage("you are paying less amount");
+            }
         }else{
-            showMessage("you are paying less amount");
+            showMessage("bill amount should be greater than zero");
         }
     }else{
-        showMessage("bill amount should be greater than zero");
+        showMessage("please enter both fields to continue");
     }
+ 
 });
 
 function remainingAmout(returnAmount){
