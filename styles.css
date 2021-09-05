@@ -67,3 +67,18 @@ th,td{
     border-collapse: collapse;
     margin: auto;
 }
+.footer{
+    margin-top: 3rem;
+}
+.footer .footer-list{
+    margin: 1rem auto;
+    list-style: none;
+}
+.footer .footer-list .list-item{
+    display: flex;
+    margin: 0.5rem auto;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+}
