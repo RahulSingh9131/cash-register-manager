@@ -46,26 +46,24 @@ input{
     margin: auto;
     display: block;
 }
+.table{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+    border-collapse: collapse;
+    margin:  0.5rem auto;
+}
 .table caption{
     font-size: x-large;
     font-weight: 500;
-    margin: 1.5rem auto;
-    margin-left: 50px;
-    text-align: justify;
+    margin: 1.5rem auto; 
 }
-
 th,td{
     border: 2px solid var(--primary-color);
     padding: 0.3rem 0.7rem;
     border-collapse: collapse;
     width: 0%;
-
-}
-.table{
-    width: 60%;
-    text-align: justify;
-    border-collapse: collapse;
-    margin: auto;
 }
 .footer{
     margin-top: 3rem;
