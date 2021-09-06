@@ -10,9 +10,9 @@ var notesList=[2000,500,100,20,10,5,1];
 button.addEventListener('click',function clickHandeler(){
     message.style.display="none";
     if(billAmount.value&&cashGiven.value){
-        if(billAmount.value>0){
-            if(cashGiven.value>=billAmount.value){
-                var returnAmount=cashGiven.value-billAmount.value;
+        if(Number(billAmount.value)>0){
+            if(Number(cashGiven.value)>=Number(billAmount.value)){
+                var returnAmount=Number(cashGiven.value)-Number(billAmount.value);
                 remainingAmout(returnAmount);
             }else{
                 showMessage("you are paying less amount");
@@ -23,7 +23,6 @@ button.addEventListener('click',function clickHandeler(){
     }else{
         showMessage("please enter both fields to continue");
     }
- 
 });
 
 function remainingAmout(returnAmount){
